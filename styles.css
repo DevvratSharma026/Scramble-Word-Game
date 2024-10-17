@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600isplay=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    min-height: 100vh;
+    background: #5372f0;
+}
+
+.container{
+    width: 440px;
+    border-radius: 7px;
+    background: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.008);
+}
+
+.container h2{
+    font-size: 25px;
+    font-weight: 500;
+    padding: 16px 25px;
+    border-bottom: 1px solid #ccc;
+}
+
+.container .content{
+    margin: 25px 20px 35px;
+}
+
+.content .word{
+    user-select: none;
+    font-size: 33px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 24px;
+    margin-right: -24px;
+    word-break: break-all;
+    text-transform: uppercase;
+}
+
+.content .details{
+    margin: 25px 0 20px;
+}
+
+.details p{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.details p b{
+    font-weight: 500;
+}
+
+.content input{
+    width: 100%;
+    padding: 0 16px;
+    height: 60px;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #bfbfbf;
+}
+
+.content input:focus{
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.008);
+}
+
+.content input::placeholder{
+    color: #aaa;
+}
+
+.content input:focus::placeholder{
+    color: #bfbfbf;
+}
+
+.content .button{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.button button{
+    border: none;
+    outline: none;
+    padding: 15px 0;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    width: calc(100% / 2 - 8px);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.button button:active{
+    transform: scale(0.97);
+}
+
+.button .refresh-word{
+    background: #6c757d;
+}
+
+.button .check-word{
+    background: #2c52ed;
+}
